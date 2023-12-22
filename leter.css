@@ -1,0 +1,33 @@
+
+.leter_container{
+    width: 100%;
+    height: 100% ;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+@keyframes leteranim {
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(100vh);
+    }
+}
+.leter_container .leter{
+    text-align: center;
+    padding: 8px;
+    color: #da9bad;
+    border-radius: 50%;
+
+    box-shadow: 1px 10px 5px 5px #da9bad;
+    transform: translateY(-100%);
+    animation-name: leteranim;
+    animation-duration: 1s;
+    animation-delay: var(--leter-delay);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+

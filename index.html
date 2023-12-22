@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="leter.css">
+    <title>Feliz Natal</title>
+</head>
+<body>
+    <div class="leter_container">
+        <div class="leter">Felicidade</div>
+        <div class="leter">Alegria</div>
+        <div class="leter">Amor</div>
+        <div class="leter">Edjane</div>
+        <div class="leter">Saúde</div>
+        <div class="leter">Dinheiro</div>
+        <div class="leter">Prosperidade</div>
+        <div class="leter">Edjane</div>
+        <div class="leter">Dinheiro</div>
+        <div class="leter">Jesus</div>
+        <div class="leter">Dinheiro</div>
+        <div class="leter">Edjane</div>
+        <div class="leter">Amor</div>
+        <div class="leter">Saúde</div>
+        <div class="leter">Visão</div>
+   </div>
+
+<div class="body">
+    <div class="heart"></div>
+</div>
+
+<script>
+    const leters = document.querySelectorAll(".leter");
+    const getRandomNumber = (min, max)=>{
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+    leters.forEach(leter=>{
+        leter.style = `--leter-delay:${getRandomNumber(0, 1000)}ms`;
+    })
+</script>
+</body>
+</html>
